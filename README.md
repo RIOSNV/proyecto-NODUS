@@ -3,20 +3,27 @@ ADR DE VISTAS
 Autor: Rodrigo Haziz Rios Novelo
 Fecha: 05/06/2026
 ----------------------------------------------------------------------------------------------------
-CONTEXTO: Nodus es un proyecto dirigido a ayuadar a los estudiantes para organizar sus actividades academicas facilmente
+# CONTEXTO: Nodus es un proyecto dirigido a ayuadar a los estudiantes para organizar sus actividades academicas facilmente
 --------------------------------------------------------------------------------------------------
-Decisión
+# Decision de estilo:
+He decidido usar el modelo vista controlador con una topologia cliente-servidor 
+
+# Justificacion: Se ha seleccionado el patrón MVC debido a su capacidad para aislar la lógica de cálculo de prioridad del usuario (Modelo) de la capa de presentación (Vista). Esta separación garantiza que el sistema sea mantenible, permitiendo futuras mejoras en los algoritmos de priorización sin afectar la interfaz, y escalable, al proporcionar una estructura de carpetas y responsabilidades clara para el crecimiento de NODOUS
+# concideraciones# concideré usar el patron hexagonal por su capacidad de adaptacion pero decidi disernir de esta decicion debido a la complejidad de adaptar el proyecto a un nuevo estilo que apenas conozco. Aunque no descarto usar este modelo en el futuro
+--------------------------------------------------------------------------------------------------
+
+# Decisión
 Se han definido las siguientes vistas arquitectónicas para el proyecto:
 Vista Lógica: Describe la estructura de clases del sistema bajo el patrón MVC, enfocándose en la relación entre Materia, Tarea y el TareasController.
 
-Vista Física: Representa la organización de archivos del proyecto en Visual Studio, garantizando la separación de responsabilidades entre los componentes del patrón.
+# Vista Física: Representa la organización de archivos del proyecto en Visual Studio, garantizando la separación de responsabilidades entre los componentes del patrón.
 
-Vista de Despliegue: Define el entorno de ejecución, distinguiendo entre el servidor web que aloja la aplicación y el cliente (navegador web).
+# Vista de Despliegue: Define el entorno de ejecución, distinguiendo entre el servidor web que aloja la aplicación y el cliente (navegador web).
 
-Vista de Procesos: Documenta el flujo dinámico de información, específicamente cómo una solicitud de usuario desencadena la lógica de priorización y la actualización de la vista.
+# Vista de Procesos: Documenta el flujo dinámico de información, específicamente cómo una solicitud de usuario desencadena la lógica de priorización y la actualización de la vista.
 --------------------------------------------------------------------------------------------------
 
-Consecuencias
+# Consecuencias
 Positivas:
 
 Facilita la incorporación de nuevas funcionalidades al tener una hoja de ruta clara de dónde reside cada componente.
@@ -25,19 +32,19 @@ Permite identificar cuellos de botella en el flujo de ejecución (Vista de Proce
 
 Simplifica la revisión de código por parte de otros desarrolladores al seguir una convención estándar.
 
-Negativas (Compromisos):
+# Negativas (Compromisos):
 
 Requiere un esfuerzo adicional de actualización en la documentación cada vez que se realice un cambio estructural significativo en el código.
 --------------------------------------------------------------------------------------------------
-Descripción de Vistas Arquitectónicas
+# Descripción de Vistas Arquitectónicas
 1. Vista Lógica (Capa 1)
  <img width="1125" height="687" alt="capa1" src="https://github.com/user-attachments/assets/063460c5-e53c-42f0-9d74-fd4324d610ad" />
 
-Descripción: Esta vista representa la estructura interna de la aplicación bajo el patrón Modelo-Vista-Controlador (MVC).
+# Descripción: Esta vista representa la estructura interna de la aplicación bajo el patrón Modelo-Vista-Controlador (MVC).
 
-Componentes: Define la separación de responsabilidades: los Modelos contienen las entidades de datos y la lógica de negocio (como el algoritmo de prioridad), los Controladores gestionan el flujo de las peticiones, y las Vistas definen la interfaz de usuario.
+# Componentes: Define la separación de responsabilidades: los Modelos contienen las entidades de datos y la lógica de negocio (como el algoritmo de prioridad), los Controladores gestionan el flujo de las peticiones, y las Vistas definen la interfaz de usuario.
 
-Propósito: Garantizar que el sistema sea modular, permitiendo que la lógica de cálculo de prioridad sea independiente de la presentación visual, facilitando el mantenimiento y la escalabilidad del proyecto.
+# Propósito: Garantizar que el sistema sea modular, permitiendo que la lógica de cálculo de prioridad sea independiente de la presentación visual, facilitando el mantenimiento y la escalabilidad del proyecto.
 --------------------------------------------------------------------------------------------------
 2. Vista Física (Capa 2)
    <img width="1279" height="670" alt="CAPA2" src="https://github.com/user-attachments/assets/d40cd4c0-9978-403d-8995-3804fc0b39d9" />
