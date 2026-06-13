@@ -9,7 +9,7 @@ Fecha: 05/06/2026
 He decidido usar el modelo vista controlador con una topologia cliente-servidor 
 
 # Justificacion: Se ha seleccionado el patrón MVC debido a su capacidad para aislar la lógica de cálculo de prioridad del usuario (Modelo) de la capa de presentación (Vista). Esta separación garantiza que el sistema sea mantenible, permitiendo futuras mejoras en los algoritmos de priorización sin afectar la interfaz, y escalable, al proporcionar una estructura de carpetas y responsabilidades clara para el crecimiento de NODOUS
-# concideraciones# concideré usar el patron hexagonal por su capacidad de adaptacion pero decidi disernir de esta decicion debido a la complejidad de adaptar el proyecto a un nuevo estilo que apenas conozco. Aunque no descarto usar este modelo en el futuro
+# concideraciones  concideré usar el patron hexagonal por su capacidad de adaptacion pero decidi disernir de esta decicion debido a la complejidad de adaptar el proyecto a un nuevo estilo que apenas conozco. Aunque no descarto usar este modelo en el futuro
 --------------------------------------------------------------------------------------------------
 
 # Decisión
