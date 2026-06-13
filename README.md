@@ -1,7 +1,7 @@
 # NODUS
-ADR DE VISTAS 
+ADR DE VISTAS Y DECISION DE MODELO  
 Autor: Rodrigo Haziz Rios Novelo
-Fecha: 05/06/2026
+Fecha: 12/06/2026
 ----------------------------------------------------------------------------------------------------
 # CONTEXTO: Nodus es un proyecto dirigido a ayuadar a los estudiantes para organizar sus actividades academicas facilmente
 --------------------------------------------------------------------------------------------------
