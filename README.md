@@ -74,7 +74,16 @@ Descripción: Define el entorno donde reside la aplicación y cómo interactúa 
 Componentes: Identifica el Navegador Web (Cliente) y el Host de Servidor .NET (Servidor).
 
 Propósito: Clarificar la infraestructura básica del sistema. En esta etapa, el despliegue es local, utilizando el entorno de desarrollo de .NET como servidor para servir la interfaz al navegador del usuario, sentando las bases para una futura implementación en un servidor en la nube.
--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+# Integración de Servicios Externos (APIs REST)
+Para enriquecer la experiencia del usuario y automatizar la gestión académica, NODOUS incorpora la integración de servicios externos mediante APIs REST, manteniendo el desacoplamiento lógico:
+
+- API de Calendario (Ej. Google Calendar): Se integrará para sincronizar automáticamente las fechas de vencimiento de las tareas registradas en NODOUS con el calendario personal del estudiante, evitando la duplicidad de registros y mejorando la gestión del tiempo.
+- API de Clima (Ej. OpenWeatherMap): Se utilizará para proporcionar contexto ambiental. Esta integración servirá como una funcionalidad estética y práctica que ayuda al estudiante a planificar sus traslados a la universidad basándose en las condiciones meteorológicas locales.
+
+Estas integraciones se tratarán como servicios externos dentro de la capa de Modelo (Services/Integrations), asegurando que, si un servicio cambia o deja de estar disponible, el núcleo del sistema (la lógica de priorización) permanezca intacto.
+--------------------------------------------------------------------------------------------------
+
 Yo Rodrigo Rios acepto el uso de ia con motivos de mejorar la redaccion y aseguracion del contenido 
 
 
