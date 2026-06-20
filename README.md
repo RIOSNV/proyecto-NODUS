@@ -1,7 +1,7 @@
 # NODUS
 ADR API REST
 Autor: Rodrigo Haziz Rios Novelo
-Fecha: 12/06/2026
+Fecha: 19/06/2026
 ----------------------------------------------------------------------------------------------------
 # CONTEXTO: Nodus es un proyecto dirigido a ayuadar a los estudiantes para organizar sus actividades academicas facilmente
 --------------------------------------------------------------------------------------------------
