@@ -1,5 +1,5 @@
 # NODUS
-ADR DE VISTAS Y DECISION DE MODELO  
+ADR API REST
 Autor: Rodrigo Haziz Rios Novelo
 Fecha: 12/06/2026
 ----------------------------------------------------------------------------------------------------
